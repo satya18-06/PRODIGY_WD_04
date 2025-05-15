@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family:Segoe UI,sans-serif;
+      line-height: 1.6;
+      background: #f4f7ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(120deg, #5d6d7e, #85929e);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about, .projects {
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #5d6d7e;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      border-left: 5px solid #85929e;
+      padding-left: 10px;
+    }
+
+    .profile-pic {
+      width: 200px;
+      border-radius: 100%;
+      margin-bottom: 10px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #4e54c8;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .project:nth-child(1) { animation-delay: 0.2s; }
+    .project:nth-child(2) { animation-delay: 0.4s; }
+
+    footer {
+      background: #5d6d7e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://img.pikbest.com/png-images/20241009/professional-corporate-woman-icon-_10941890.png!sw800" alt="Your Photo" class="profile-pic">
+    <h1>CHENNABOINA ANJANA DEVI</h1>
+    <p>Web Developer | Designer | Tech Enthusiast</p>
+  </header>
+
+  <section class="about">
+    <h2>👩‍🎓ABOUT ME:</h2>
+    <p>Hello! I’m a web developer with experience in building responsive, user-focused websites and web applications. I specialize in front-end development using HTML, CSS, JavaScript, and modern frameworks like React. I enjoy solving problems through clean code and thoughtful design, and I’m passionate about creating seamless digital experiences.
+
+    </p><br>
+    <h3><strong>💼Education:</strong></h3>
+
+     <P>     <b>  <i>•Bachelor of Technology(B.Tech):</i></b>Jayamukhi institute of technological sciences.</p>
+        <p><b><i>•Intermediate:</i></b>
+            TSWRJC (Telangana Social Welfare Residential Junior College).</p>
+        <p><b> <i>•SSC:</i></b>Delta Super 30 High School.</p><br>
+    <h3><strong>💬Experience:</strong></h3>
+        <p>• Web developer Intern at Prodigy InfoTech.</p>
+  </section>
+
+  <section class="projects">
+    <h2>🚀PROJECTS:</h2>
+      <h3>•Tic Tac Toe Game:</h3>
+      <p>Built an interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript. Included features like score tracking and animations.</p>
+    <br>
+
+      <h3>•Weather App:</h3>
+      <p>A weather forecasting web app using OpenWeather API. Shows current conditions and a 5-day forecast with responsive design.</p>
+
+  </section>
+
+  <footer>
+    <p>📧 chennaboinaanjana@gmail.com</p>
+    <p> 🔗 https://www.linkedin.com/in/anjana-devi-9b3373255</p>
+    <p> 🐙https://github.com/anjanadevi27</p>
+  </footer>
+
+</body>
+</html>
